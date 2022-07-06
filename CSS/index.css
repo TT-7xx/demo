@@ -1,0 +1,497 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* 去掉高亮显示 */
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+}
+
+body{
+	/* 百分比布局 */
+	width: 100%;
+	font-size: 14px;
+	color: #666;
+	font-family: "microsoft yahei",sans-serif;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	height: 200px;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+ul,ol { 
+	list-style: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+/* 清除浮动 */
+.clearfix::after,
+.clearfix::before {
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/* header */
+header{
+	width: 100%;
+	/* 固定定位 */
+	position: fixed;
+	top: 0;
+	left: 50%;
+	/* 居中 */
+	transform: translateX(-50%);
+	/* 给最大最小宽度 适用于这个大小的移动端 */
+	min-width: 320px;
+	max-width: 640px;
+	/* 堆叠属性 高的覆盖低的 */
+	z-index: 1000;
+}
+
+header >.header-box{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	height: 44px;
+	padding: 5px;
+	/* 子绝夫相 */
+	position: relative;
+}
+
+header >.header-box>.icon-logo{
+	/* 子绝夫相 */
+	position: absolute;
+	top: 12px;
+	left: 5px;
+	width: 60px;
+	height: 44px;
+	background: url(../images/sprites.png) no-repeat 0 -109px;
+	/* 背景图大小 比例 */
+	background-size: 200px auto;
+}
+
+header >.header-box>.login{
+	/* 子绝夫相 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 44px;
+	/* 字体居中 */
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}
+
+header>.header-box>form{
+	height: 40px;
+	margin-left: 70px;
+	margin-right: 60px;
+}
+
+header>.header-box>form>input{
+	width: 100%;
+	height: 30px;
+	margin-top: 3px;
+	/* 边框样式 */
+	border-radius: 15px;
+	padding-left: 30px;
+}
+
+header>.header-box>form>.icon-fdj{
+	/* 子绝夫相 */
+	position: absolute;
+	top: 13px;
+	left: 80px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/sprites.png) no-repeat -60px -110px;
+	background-size: 200px auto;
+	
+}
+.bnner{
+	width: 100%;
+}
+.bnner>ul{
+	width: 100%;
+}
+.bnner>ul>li{
+	width: 100%;
+}
+.bnner>ul>li>img{
+	width: 100%;
+}
+
+nav{
+	width: 100%;
+}
+nav>ul{
+	width: 100%;
+	/* 内边距 */
+	padding: 5px;
+}
+nav>ul>li{
+	/* 每个li只有25%的宽度 然后向左浮动 */
+	width: 25%;
+	float: left;
+	/* 字体居中 */
+	text-align: center;
+	margin-bottom: 10px;
+}
+nav>ul>li>img{
+	width: 40px;
+	height: 40px;
+}
+/* 字体样式 */
+nav>ul>li>p{
+	font-size: 12px;
+	color: #333;
+}
+
+.product{
+	width: 100%;
+}
+.product>.product-box{
+	width: 100%;
+	padding: 5px;
+}
+.product>.product-box>.product-box-title{
+	width: 100%;
+	height: 32px;
+}
+.product>.product-box>.product-box-title>.left{
+	float: left;
+	padding-top: 5px;
+	padding-left: 30px;
+	color: red;
+	/* 子绝夫相 */
+	position: relative;
+}
+.product>.product-box>.product-box-title>.left>.sk-icon{
+	/* 子绝夫相 */
+	position: absolute;
+	top:6px;
+	left: 5px;
+	width: 16px;
+	height: 16px;
+	background-color: #005588;
+	background: url(../images/seckill-icon.png) no-repeat;
+	background-size: 16px 16px;
+}
+.product>.product-box>.product-box-title>.rigth{
+	float: right;
+	padding-top: 5px;
+}
+.product>.product-box>.product-box-content{
+	width: 100%;
+	
+}
+.product>.product-box>.product-box-content>ul{
+	width: 100%;
+	padding: 3px;
+}
+.product>.product-box>.product-box-content>ul>li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.product>.product-box>.product-box-content>ul>li:nth-child(n+2)>a{
+	/* 变成块级元素 */
+	display: block;
+	width: 100%;
+	border-left: 1px solid #ccc;
+}
+.product>.product-box>.product-box-content>ul>li>a>img{
+	width: 60%;
+}
+.product>.product-box>.product-box-content>ul>li>p:nth-of-type(1){
+	color: red;
+}
+.product>.product-box>.product-box-content>ul>li>p:nth-of-type(2){
+	color: #333;
+	text-decoration: line-through;
+}
+.product>.product-box>.product-box-title>h3{
+	/* 去掉变粗的属性 */
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 20px;
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+}
+/* 在h3的前面添加样式 */
+.product>.product-box>.product-box-title>h3::before{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	width: 3px;
+	
+}
+.product > .product-box > .product-box-content > a{
+	/* 变成块级元素 进行浮动 */
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+.bottom{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	position: relative;
+	top: 20px;
+	left: 0;
+}
+.bottom>.bot-top{
+	width: 100%;
+}
+.bottom>.bot-top>.top{
+	width: 100%;
+	color: #333;
+	font-size: 18px;
+}
+.bottom>.bot-top>.top>strong:nth-of-type(1){
+	position: absolute;
+	top: 0;
+	left: 8%;
+	width: 100%;
+}
+.bottom>.bot-top>.top>strong:nth-of-type(2){
+	position: absolute;
+	top: 0;
+	left: 55%;
+	width: 100%;
+}
+.bottom>.bot-top>.xia{
+	width: 100%;
+	font-size: 16px;
+}
+.bottom>.bot-top>.xia>span:nth-of-type(1){
+	position: absolute;
+	top: 25px;
+	left: 8%;
+	width: 100%;
+}
+.bottom>.bot-top>.xia>span:nth-of-type(2){
+	position: absolute;
+	top: 25px;
+	left: 55%;
+	width: 100%;
+}
+.bottom>.bot-bottom{
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.bottom>.bot-bottom>ul{
+	width: 100%;
+}
+.bottom>.bot-bottom>ul>li{
+	width:20%;
+	float: left;
+}
+.bottom>.bot-bottom>ul>li>a{
+	width: 100%;
+}
+.bottom>.bot-bottom>ul>li>a>img:nth-of-type(1){
+	width: 100%;
+}
+.bottom>.bot-bottom>ul>li>a>img:nth-of-type(2){
+	width: 100%;
+}
+.bottom>.bott{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	left: 55%;
+}
+.bottom>.bott>ul{
+	width: 100%;
+}
+.bottom>.bott>ul>li{
+	width: 20%;
+	float: left;
+}
+.bottom>.bott>ul>li>a{
+	width: 100%;
+}
+.bottom>.bott>ul>li>a>img:nth-of-type(1){
+	width: 100%;
+}
+.bottom>.bott>ul>li>a>img:nth-of-type(2){
+	width: 100%;
+}
+
+
+/* .live{
+	position: relative;
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+}
+.live>.live-top{
+	
+	width: 100%;
+}
+.live>.live-top>ul{
+	width: 100%;
+}
+.live>.live-top>ul>li{
+	width: 100%;
+}
+.live>.live-top>ul>li>img{
+	width: 100%;
+}
+.live>.live-bot{
+	position: absolute;
+	top: 415px;
+	left: 30px;
+	width: 100%;
+}
+.live>.live-bot>ul{
+	width: 100%;
+}
+.live>.live-bot>ul>li{
+	width: 30%;
+}
+.live>.live-bot>ul>li>img{
+	width:100%;
+	height: 140px;
+}
+ */
+
+
+/* .live{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	height: 250px;
+	position: relative;
+	top: 400px;
+	background-color: pink;
+	background: url(../images/hmbj.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.live>.bj{
+	width: 100%;
+}
+.live>.bj>ul{
+	width: 100%;
+}
+.live>.bj>ul>li{
+	width: 100%;
+}
+.live>.bj>ul>li:nth-of-type(1){
+	width: 30%;
+	float: left;
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	background: url(../img/bj1.jpg) no-repeat;
+	background-size:100% auto;
+	height: 100%;
+}
+.live>.bj>ul>li:nth-of-type(2){
+	width: 30%;
+	float: left;
+	position: absolute;
+	top: 16%;
+	left: 35%;
+	background: url(../img/bj1.jpg) no-repeat;
+	background-size:100% auto;
+	height: 100%;
+}
+.live>.bj>ul>li>a{
+	width: 100%;
+}
+.live>.bj>ul>.a>a>img:nth-of-type(1){
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 15%;
+	float: left;
+}
+.live>.bj>ul>.a>a>img:nth-of-type(2){
+	width: 95%;
+	position: absolute;
+	margin-top: 65%;
+	margin-left: 2%;
+	float: left;
+}
+.live>.bj>ul>.b>a>img:nth-of-type(1){
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 15%;
+	float: left;
+}
+.live>.bj>ul>.b>a>img:nth-of-type(2){
+	width: 95%;
+	position: absolute;
+	margin-top: 65%;
+	margin-left: 2%;
+	float: left;
+}
+.t1{
+	width: 100%;
+	position: absolute;
+	top: 39%;
+	left: 10%;
+	color: #fff;
+	font-weight: bold;
+}
+.t2{
+	width: 100%;
+	position: absolute;
+	top: 52%;
+	left: 20%;
+	color: red;
+	font-weight: bold;
+}
+.t3{
+	width: 100%;
+	position: absolute;
+	top: 39%;
+	left: 15%;
+	color: #fff;
+	font-weight: bold;
+}
+.t4{
+	width: 100%;
+	position: absolute;
+	top: 52%;
+	left: 28%;
+	color: red;
+	font-weight: bold;
+}
+.live>.bj>ul>.hua>a>img:nth-of-type(1){
+	width: 30%;
+	position: absolute;
+	top: 16%;
+	left:66%;
+}
+.live>.bj>ul>.hua>a>img:nth-of-type(2){
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left:66%;
+} */

@@ -1,0 +1,120 @@
+/* common */
+* {
+	margin: 0;
+	padding: 0;
+	/* 
+	1  移动端高亮显示去掉
+	2 盒子模型设为CSS3 
+	 
+	 */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/* 
+	 1 宽度（最小宽度和最大的宽度）
+	 2 字体颜色   大小  类型
+	 3、 居中
+	 4、 去掉水平方向的滚动条
+	 5  背景色
+	 */
+	width: 100%;
+	min-width: 320px;
+	max-width: 540px;
+	font-size: 14px;
+	color: #000;
+	font-family: "microsoft yahei", sans-serif;
+	margin: 0 auto;
+	overflow-x: hidden;
+	background-color: #f4f4f4;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+img {
+	border: none;
+	
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+
+/* search-index */
+.search-index {
+	width: 100%;
+	height: 50px;
+	/* background-color: pink; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.search-index a {
+	width: 50px;
+	height: 50px;
+	/* background-color: burlywood; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 12px;
+}
+
+.search-index a::before {
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(img/sprite.png) no-repeat -59px -195px;
+	background-size: 104px 328px;
+	margin-bottom: 5px;
+}
+
+.search-index  .search-index-box {
+	flex: 1;
+	height: 32px;
+	background-color: #fff;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 2px 1px #ccc;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 10px;
+	
+}
+
+.search-index .search-index-box .search-icon {
+	width: 15px;
+	height: 15px;
+	/* background-color: red; */
+	background: url('img/sprite.png') no-repeat -60px -280px;
+	background-size: 104px 328px;
+}
+
+.search-index .search-index-box span:last-child {
+	font-size: 12px;
+	color: #666;
+}

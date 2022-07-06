@@ -1,0 +1,212 @@
+body{
+	min-width: 320px;
+	max-width: 640px;
+}
+.clearfix::after,
+.clearfix::before{
+	content: "";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.row{
+	float: left;
+	width: 40%;
+	height: 240px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+ [class^='col-'] {
+    height: 80px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 80px; 
+	box-sizing: border-box;
+ }
+ .row>.col-1 {
+	 border-top-left-radius: 16px;
+     background-image: linear-gradient( 60deg,#fa5956,#fb8650);
+     width: 100%;
+ }
+.row>.col-1>img{
+	width: 70%;
+	height: 40px;
+	margin-top: 40px;
+}
+ 
+ .row>.col-2 {
+     width: 100%;
+	 background-image: linear-gradient(60deg,#3c83fa,#50b2fa);
+ }
+ .row>.col-2>img{
+ 	width: 70%;
+ 	height: 40px;
+ 	margin-top: 40px;
+ }
+ .row>.col-3 {
+	 border-bottom-left-radius: 16px;
+     width: 100%;
+	 background-image: linear-gradient(60deg,#2fc3b6,#52d9b3);
+ }
+ .row>.col-3>img{
+	 width: 70%;
+	 height: 40px;
+	 margin-top: 40px;
+ }
+ 
+.row-1{
+	float: left;
+ 	width: 20%;
+ 	height: 240px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+	margin-left: 2px;
+ }
+ [class^='cll-'] {
+    height: 80px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 45px;
+	box-sizing: border-box;
+ }
+.row-1>.cll-1 {
+    background-image: linear-gradient(270deg,#ffa846,#ff8939 99%);
+	width: 100%;
+}
+.row-1>.cll-2 {
+   width: 100%;
+   background-image: linear-gradient(60deg,#3c83fa,#50b2fa);
+}
+.row-1>.cll-3 {
+   width: 100%;
+   background-image: linear-gradient(60deg,#2fc3b6,#52d9b3);
+   
+  }
+  .row-3{
+  	float: left;
+  	width: 35%;
+  	height: 240px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;	
+	margin-left: 2px;
+  }
+.cal-1{
+    height: 80px;
+  	width: 100%;
+  	color: #fff;
+	border-top-right-radius: 16px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	padding-left: 90px;
+  	box-sizing: border-box;
+	background-image: linear-gradient(270deg,#ffa846,#ff8939 99%);
+   }
+.row-4{
+  	float: left;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;	
+  	margin-left: 2px;
+  } 
+ [class^='cel-'] {
+	height: 80px;
+	width: 50%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 40px;
+	box-sizing: border-box;
+ }
+.row-4>.cel-1 {
+background-image: linear-gradient(60deg,#3c83fa,#50b2fa);	/* width: 100%; */
+}
+.row-4>.cel-2 {
+	margin-left: 2px;
+   background-image: linear-gradient(60deg,#3c83fa,#50b2fa);
+}
+.row-4>.cel-3 {
+   background-image: linear-gradient(60deg,#2fc3b6,#52d9b3);
+      
+}
+.row-4>.cel-4 {
+   margin-left: 2px;
+   background-image: linear-gradient(60deg,#2fc3b6,#52d9b3);
+   border-bottom-right-radius: 16px;
+}
+
+.sub-nav-1 {
+	width: 100%;
+}
+.sub-nav-1 ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.sub-nav-1 ul li{
+	list-style: none;
+	flex: 1;
+}
+
+.sub-nav-1 ul li a {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+[class^='sub-nav-icon'] {
+	width: 28px;
+	height:28px;
+	background: url(../img/img/un_ico_subnav2x@v7.152.png) no-repeat;
+	background-size: 28px 280px;
+	margin-bottom: 6px;
+	margin-top: 10px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-1 {
+	background-position: 0 0;
+}
+
+.sub-nav-1 ul li a .sub-nav-icon-2 {
+
+	background-position:  0 -28px;
+
+}
+.sub-nav-1 ul li a .sub-nav-icon-3 {
+	background-position:  0 -56px
+}
+.sub-nav-1 ul li a .sub-nav-icon-4 {
+	background-position:  0 -84px;
+}
+
+.sub-nav-1 ul li a .sub-nav-icon-5 {
+	background-position:  0 -112px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-6 {
+	background-position:  0 -140px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-7 {
+	background-position:  0 -168px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-8 {
+	background-position:  0 -196px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-9 {
+	background-position:  0 -224px;
+}
+.sub-nav-1 ul li a .sub-nav-icon-10 {
+	background-position:  0 -252px;
+}
